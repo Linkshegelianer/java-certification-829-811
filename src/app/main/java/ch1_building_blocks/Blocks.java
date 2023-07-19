@@ -1,11 +1,11 @@
 package building_blocks_1;
 
-public class Main {
+public class Blocks {
 
     // Attributes of a constructor: no return type & the name marches the class name
-    public Main() {}
+    public Blocks() {}
 
-    public Main(int length) {
+    public Blocks(int length) {
         this.length = length;
     }
 
@@ -39,7 +39,7 @@ public class Main {
     public void var() {
         var var0 = 11;
         var var1 = "var";
-        var var2 = new Main();
+        var var2 = new Blocks();
     }
 
     // Won't compile:
@@ -77,9 +77,9 @@ public class Main {
 //     public final static void main(final String[] args) {
      public final static void main(final String... args) {
 //    public final static void main(final String args[]) {
-        Main main = new Main();
-        main.length = 10;
-        System.out.println(main.length);
+        Blocks blocks = new Blocks();
+        blocks.length = 10;
+        System.out.println(blocks.length);
         System.out.println(formatting1);
         System.out.println(formatting2);
         System.out.println(formatting3);
