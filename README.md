@@ -2,21 +2,21 @@
 Practice exercises for two Oracle certifications: OCP Java SE 17 Developer (1Z0-829) and Java Foundation Certified Junior Associate (1Z0-811) based on the newest (2022) book by Scott Selikoff & Jeanne Boyarsky.
 
 **Content:**
-1. [Building Blocks]()
-2. [Operators]()
-3. [Making Decisions]()
-4. [Core APIs]()
-5. [Methods]()
-6. [Class Design]()
-7. [Beyond Classes]()
-8. [Lambdas and Functional Interfaces]()
-9. [Collections and Generics]()
-10. [Streams]()
-11. [Exceptions and Localization]()
-12. [Modules]()
-13. [Concurrency]()
-14. [I/O]()
-15. [JDBC]()
+1. [Building Blocks](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch1_building_blocks)
+2. [Operators](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch2_operators)
+3. [Making Decisions](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch3_making_decisions)
+4. [Core APIs](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch4_core_APIs)
+5. [Methods](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch5_methods)
+6. [Class Design](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch6_class_design)
+7. [Beyond Classes](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch7_beyond_classes)
+8. [Lambdas and Functional Interfaces](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch8_lambdas_gunctional_interfaces)
+9. [Collections and Generics](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch9_collections_generics)
+10. [Streams](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch10_streams)
+11. [Exceptions and Localization](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch11_exception_localization)
+12. [Modules](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch12_modules)
+13. [Concurrency](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch13_concurrency)
+14. [I/O](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch14_input_output)
+15. [JDBC](https://github.com/Linkshegelianer/java-certification-829-811/tree/main/src/app/main/java/ch15_JDBC)
 
 **1Z0- 811 Java Foundations**
 

@@ -3,6 +3,7 @@ package building_blocks_1;
 public class Blocks {
 
     // Attributes of a constructor: no return type & the name marches the class name
+    // Contructor with a return type becomes a method
     public Blocks() {}
 
     public Blocks(int length) {
