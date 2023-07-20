@@ -41,17 +41,11 @@ public class Blocks {
 //    var winter = 12, cold;
 
 
-    // Objects vs. references:
-    // Reference is a variable that has a name and can be used to access the contents of an object
-    // Object sits on the heap and does not have a name, get's garbage collected when its state is no longer accessible
-    public static void scope() {
-        String one, two;
-        one = new String("a");
-        two = new String("b");
-        one = two; // no pointer to "a"
-        String three = one; // new pointer to "b"
-        one = null; // two pointers to "b"
-    }
+    // scientific notation 43e1
+
+    // chained initialization is not valid:
+    /// int a = b = c = 100; faul
+    // int a, b, c = 100; a and b are not initialized
 
     // Text blocks:
     public static String formatting1 = "\"Java Study Guide\"\n by Scott & Jeanne";
@@ -64,10 +58,9 @@ public class Blocks {
             "Java Study Guide\"\
              by Scott & Jeanne
             """; // \ omits new line on that line
-
-    // Valid formats of a variable name:
 //     public final static void main(final String[] args) {
-     public final static void main(final String... args) {
+    // invalid main() will result in an error at runtime
+    public final static void main(final String... args) {
 //    public final static void main(final String args[]) {
         Blocks blocks = new Blocks();
         blocks.length = 10;

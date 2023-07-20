@@ -11,6 +11,12 @@ public class TypeConversion {
         int exp2 = (int) value1 + (int) value2;
         System.out.println(exp1 == exp2); // true
 
+        // float y = 2.1; // won't compile
+        // byte, short & char always promoted when used with a binary arithmetic operator
+        // comversion from bigger to smaller must be with excplicit casting
+        // compound assignment operator applies casting automatically, cannot be used to declare a new variable
+
+        // int value can be assigned to int, long, float, double
     }
 
 }

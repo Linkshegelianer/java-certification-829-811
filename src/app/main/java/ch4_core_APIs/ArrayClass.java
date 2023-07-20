@@ -9,4 +9,7 @@ public class ArrayClass {
     String[] arr4 = {"aaa"};
 
     // not valud: String[] arr = new String[1]{"aaa"};
+
+    // length, not length()
+    // last element: arr.length - 1
 }
