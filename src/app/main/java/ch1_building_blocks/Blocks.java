@@ -10,16 +10,7 @@ public class Blocks {
         this.length = length;
     }
 
-    // Types of variables:
-    final static int MAX_LENGTH = 5; // class variable
-    int length = 9; // instance variable == class field
 
-    public void grow(int inches) { // local variable
-        if (length < MAX_LENGTH) {
-            int newSize = length + inches; // local variable
-            length = newSize;
-        }
-    }
 
     // Valid identifiers:
 

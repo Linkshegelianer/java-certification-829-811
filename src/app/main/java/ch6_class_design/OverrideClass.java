@@ -1,7 +1,11 @@
 /*
+Same signature, compatible access modifiers, exceptions
+
 Rules vor valud override:
 - return type must be covariant == cannot be broader;
-- generic arguments must have the same signatyre with the same generic type.
+- generic arguments must have the same signature with the same generic type.
+
+Overriden method may nod declare any new or broader checked exception that the method it inherits
  */
 public class OverrideClass {
 

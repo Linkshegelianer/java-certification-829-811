@@ -9,6 +9,7 @@ public class Collections {
         // List, Map, Set, Queue class methods
         // Comparator sorts in ascending order, reversed() in descending
         // Iterate over map, containsKey() containsValue()
+        // Deque as a stack
 
 
         // Creating List with a Factory:
