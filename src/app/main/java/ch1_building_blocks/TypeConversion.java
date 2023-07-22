@@ -19,4 +19,23 @@ public class TypeConversion {
         // int value can be assigned to int, long, float, double
     }
 
+    float:
+
+    float f = -1;
+    float f = 0x0123;
+    float f = 4;
+    float f1 = 1.0; // 1.0 is a double.
+    float f = 43e1; // false
+
+
+    System.out.println(4 + 1.0f); would print 5.0
+
+    Valid:
+    long g = 012 ;
+    float f = -123 ;
+
+    Invalid:
+    float d = 0 * 1.5 ;
+    int i = (int) false;
+
 }

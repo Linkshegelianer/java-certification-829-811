@@ -1,15 +1,15 @@
 # Primitive types
 
-| Keyword     | Type                        | Range                                              | Default value | Example      | Additional                                                                               |
-|-------------|-----------------------------|----------------------------------------------------|---------------|--------------|------------------------------------------------------------------------------------------|
-| *boolean*   | *true* or *false*           | n/a                                                | *false*       | *true*       | Is not related to numeric value in Java                                                  |
-| *byte*      | 8-bit integral value        | -128 to 127, -2^7 to 2^7 -1                        | 0             | 123          | Upper- and lowercase letters are assignable to byte & will be converted to numeric value |
-| *short*     | 16-bit integral value       | -32,768 to 32,767, -2^15 to 2^15 -1                | 0             | 123          |                                                                                          |
-| *int*       | 32-bit integral value       | -2,147,483,648 to 2,147,483,647, -2^31 to 2^31 - 1 | 0             | 123          |                                                                                          |
-| *long*      | 64-bit integral value       | -2^63 to 2^63 - 1                                  | 0L            | 123L or 123l |                                                                                          |
-| *float*     | 32-bit floating-point value | n/a                                                | 0.0f          | 123.45f      |                                                                                          |
-| *double*    | 64-bit floating-point value | n/a                                                | 0.0           | 123.45       | Double cannot be implicitly narrowed to a float                                          |
-| *char*      | 16-bit Unicode value        | 0 to 65,535                                        | \u0000        | 'a'          | Char can hold a larger integer value than short                                          |
+| Keyword     | Type                        | Range                                              | Default value | Example            | Additional                                                                               |
+|-------------|-----------------------------|----------------------------------------------------|---------------|--------------------|------------------------------------------------------------------------------------------|
+| *boolean*   | *true* or *false*           | n/a                                                | *false*       | *true*             | Is not related to numeric value in Java                                                  |
+| *byte*      | 8-bit integral value        | -128 to 127, -2^7 to 2^7 -1                        | 0             | 123                | Upper- and lowercase letters are assignable to byte & will be converted to numeric value |
+| *short*     | 16-bit integral value       | -32,768 to 32,767, -2^15 to 2^15 -1                | 0             | 123                |                                                                                          |
+| *int*       | 32-bit integral value       | -2,147,483,648 to 2,147,483,647, -2^31 to 2^31 - 1 | 0             | 123                |                                                                                          |
+| *long*      | 64-bit integral value       | -2^63 to 2^63 - 1                                  | 0L            | 123L or 123l       |                                                                                          |
+| *float*     | 32-bit floating-point value | n/a                                                | 0.0f          | 123.45f            |                                                                                          |
+| *double*    | 64-bit floating-point value | n/a                                                | 0.0           | 123.45             | Double cannot be implicitly narrowed to a float                                          |
+| *char*      | 16-bit Unicode value        | 0 to 65,535, 0 - (2^16-1)                          | \u0000        | 'a', '\uDEAF', '\n'| Char can hold a larger integer value than short                                          |
 
 **Reference type** points to an object by storing the memory address where the object is located.
 * All objects are stored in heap.

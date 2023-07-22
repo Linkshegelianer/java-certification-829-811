@@ -23,4 +23,14 @@ public class TypesOfOperators {
         System.out.println(String.format("Using post-increment and post-decrement operators for %d results in %d and %d.", incPostfix, incPostfix++, decrPostfix--));
         System.out.println(String.format("But then the value will be %d and %d respectively.", incPostfix, decrPostfix));
     }
+
+
+    valid declarations:
+    int a, b, c; a = b = c = 100;
+    int a, b, c=100;
+    int a=100, b, c;
+
+    invalid declarations:
+    int a = b = c = 100;
+    int a= 100 = b = c;
 }
