@@ -17,12 +17,25 @@ public class Blocks {
 //     int public; // reserved word
 //     int _;
 
+    // Valid literals:
+
+    int a = 3_1;
+    int b = 2_234.0_0;
+    int c = 9___6;
+
+    // Invalid literals:
+//    int d = 1_329_.0;
+//    int e = 3_13.0_;
+//    int f = 5_291._2;
+//    int g = _1_3_5_0;
+
+
     // Text blocks:
     // \ - escaping characters \" -> "
     // \ at the end of the line - omit new line on that line
     // \n - new line for unix
     // \r - new line for mac
-    // \s - two spaces
+    // \s - keep the whitespace (will count for length())
 
     public static String formatting1 = "\"Java Study Guide\"\n by Scott & Jeanne";
     public static String formatting2 = """

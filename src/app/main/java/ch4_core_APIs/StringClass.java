@@ -1,3 +1,10 @@
+/*
+String is an immutable sequence of characters.
+Calling the constructor explicitly is optional
+Concatenation operator (+) creates a new String with the content of the first String followed by the content of the second String
+If either operand involved in the + expression is a String, concatenation is used. Otherwise, addition is used
+String literals are stored in the string pool
+ */
 public class StringClass {
 
     // String.compareTo("hello world") what will be returned

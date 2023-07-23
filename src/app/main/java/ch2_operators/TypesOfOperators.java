@@ -22,15 +22,15 @@ public class TypesOfOperators {
         System.out.println(String.format("Using pre-increment and pre-decrement operators for %d results in %d and %d.", incPrefix, ++incPrefix, --decrPrefix));
         System.out.println(String.format("Using post-increment and post-decrement operators for %d results in %d and %d.", incPostfix, incPostfix++, decrPostfix--));
         System.out.println(String.format("But then the value will be %d and %d respectively.", incPostfix, decrPostfix));
+
+        // Valid declarations:
+        int a, b, c;
+        a = b = c = 100;
+        int d, e, f=100;
+        int g=100, h, i;
+
+        // Invalid declarations:
+//        int a = b = c = 100;
+//        int a= 100 = b = c;
     }
-
-
-    valid declarations:
-    int a, b, c; a = b = c = 100;
-    int a, b, c=100;
-    int a=100, b, c;
-
-    invalid declarations:
-    int a = b = c = 100;
-    int a= 100 = b = c;
 }

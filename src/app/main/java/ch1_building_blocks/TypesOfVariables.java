@@ -3,6 +3,8 @@ Static variable cannot use instance variable
 Instance methods can call static, static can call only when creating instance
  */
 
+import java.util.*;
+
 public class TypesOfVariables {
 
     static class Class {
@@ -14,6 +16,19 @@ public class TypesOfVariables {
             var newSize = ++inches; // local variable, must be initialized before usage, can be inferred with var
             return newSize;
         }
+
+        // Inferring the type with var (only for local variables):
+        public void var() {
+            var var0 = 11;
+            var var1 = "var";
+            var var2 = new Class();
+        }
+
+        // Won't compile:
+//    int a, var b = 3; // you replaced var with a real type
+//    var n = null; // cannot be initialized with null, can only be resigned a null value after it's declared as a reference type
+//    var fall = 2, autumn = 2;
+//    var winter = 12, cold;
     }
 
     public static void main(String[] args) {
@@ -25,26 +40,14 @@ public class TypesOfVariables {
         System.out.println(String.format("Result of static inc() will be %d for %d value.", object.inc(value3), value3)); // 2
     }
 
-    Sting a, b, c; // three references
-    a = new String("hello"); // 2 objects
-    b = a;
-    c = a + b;
+    public void count() {
+        String a, b, c; // three references
+        a = new String("hello"); // 2 objects
+        b = a;
+        c = a + b;
+    }
 
     // The reference type is List and the object type is ArrayList.
     List students = new ArrayList();
-
-    // Inferring the type with var (only for local variables):
-    public void var() {
-        var var0 = 11;
-        var var1 = "var";
-        var var2 = new Blocks();
-    }
-
-    // Won't compile:
-//    int a, var b = 3; // you replaced var with a real type
-//    var n = null; // cannot be initialized with null, can only be resigned a null value after it's declared as a reference type
-//    var fall = 2, autumn = 2;
-//    var winter = 12, cold;
-
 
 }
