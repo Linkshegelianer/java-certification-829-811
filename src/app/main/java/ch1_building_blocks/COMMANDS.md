@@ -20,21 +20,30 @@ By default, the `javac` command places the compiled classes in the same director
 
 You can use commands to specify location of classes needed to compile the program:
 `javac -cp [classpath] [package]/[Class].java`
+
 `javac -classpath [classpath] [package]/[Class].java`
+
 `javac --class-path [classpath] [package]/[Class].java`
 
 To run the program, you could need to specify the classpath:
 `java -cp [target directory] [package]/[Class]`
+
 `java -classpath [target directory] [package]/[Class]`
+
 `java --class-path [target directory] [package]/[Class]`
 
 **Working with JAR files**:
+
 `- c`, `-- create` - creates a new JAR file
+
 `- v`, `-- verbose` - prints details when working with JAR files
+
 `- f <fileName>`, `-- file <fileName>` - JAR filename
+
 `- C <directory>` - directory containing files to be used to create the JAR
 
 `jar -cvf myNewFile.jar .`
+
 `jar --create --verbose --file myNewFile.jar .`
 
 

@@ -1,6 +1,4 @@
 /*
-Same signature, compatible access modifiers, exceptions
-
 Rules vor valud override:
 - return type must be covariant == cannot be broader;
 - generic arguments must have the same signature with the same generic type.

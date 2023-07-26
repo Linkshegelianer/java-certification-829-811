@@ -26,5 +26,4 @@ public class StringBuilderClass {
         System.out.println(one == two); // false
         System.out.println(one == three); // true
     }
-
 }

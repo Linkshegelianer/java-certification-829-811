@@ -38,6 +38,8 @@ Practice exercises for two Oracle certifications: OCP Java SE 17 Developer (1Z0-
 
 *Total chapters needed: 1, 2, 3, 4, 5, 6, 9, 11*
 
+
+
 **1Z0- 829 Java SE 17 Developer**
 
 | Exam Objective                                            | Chapter    |

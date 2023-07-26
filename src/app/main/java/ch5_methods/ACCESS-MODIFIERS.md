@@ -1,8 +1,9 @@
-private - only within the same class
-package - from any class in the same package
-protected - from class in the package or subclass
-public - can be called from anywhere
+# Access modifiers
 
-final && abstract won't compile
+**Access modifiers for classes**:
+- `private` - only within the same class
+- package - from any class in the same package (default access)
+- `protected` - from class in the package or subclass
+- `public` - can be called from anywhere
 
-method(final x) cannot change what x points to (but can change the object's internal fields)
+final && abstract won't compile  

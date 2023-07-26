@@ -1,20 +1,41 @@
+/*
+Constructor is special type of method that creates a new object initializing fields.
+Attributes of a constructor: no return type & the name marches the class name.
+Contructor with a return type becomes a method.
+Private constructor => other classes cannot call it
+Constructor cannot be final, static or abstract.
+ */
 public class Constructor {
 
-    // private constructor => other classes cannot call it
-    // Attributes of a constructor: no return type & the name marches the class name
-    // Contructor with a return type becomes a method
+    int[] value;
 
-    // this - instance of the class
-    // this() - constructor call within a class, should be the first statement in a constructor
+    public Constructor() {
+        value = new int[0];
+    }
 
+    public Constructor(int... value) {
+        this.value = value;
+    }
 
-    // constructor cannot be final, static or abstract
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < value.length; i++) {
+            sb.append(value[i]);
+            if (i < value.length - 1) {
+                sb.append(", ");
+            }
+        }
+        return "[" + sb.toString() + "]";
+    }
 
+    public static void main(String[] args) {
+        Constructor c1 = new Constructor(); // Constructor() is called here
+        Constructor c2 = new Constructor(1);
+        Constructor c3 = new Constructor(1, 2, 3);
 
-    // 1 and 4 cannot occur in the same class - int a is not static
-    // 1 and 2 cannot occur in the same class - they have the same name
-    int a;    //  (1)
-    static int a;    //  (2)
-    int f( )   { return a; }    //  (3)
-    static int f( ) { return a; }    //  (4)
+        System.out.println(c1.toString()); // []
+        System.out.println(c2.toString()); // [1]
+        System.out.println(c3.toString()); // [1, 2, 3]
+    }
 }
