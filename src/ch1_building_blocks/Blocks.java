@@ -20,7 +20,7 @@ public class Blocks {
     // Valid literals:
 
     int a = 3_1;
-    int b = 2_234.0_0;
+//    int b = 2_234.0_0;
     int c = 9___6;
 
     // Invalid literals:

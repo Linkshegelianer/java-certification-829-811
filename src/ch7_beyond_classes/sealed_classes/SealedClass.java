@@ -13,5 +13,7 @@ public sealed class SealedClass permits SealedClass.Nested, Class1, Class2 {
     final class Nested extends SealedClass {
     }
 
-    public abstract int getValue();
+    public int getValue() {
+        return 0;
+    }
 }
