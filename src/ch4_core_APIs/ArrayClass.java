@@ -17,6 +17,9 @@ public class ArrayClass {
         String[] arr1 = new String[] {"aaa"};
         String[] arr2 = new String[1];
         arr2[0] = "aaa";
+        // Adding more elements will result in exception:
+//        arr2[1] = "meow";
+//        arr2[2] = "nope";
         String[] arr3 = {new String("aaa")};
         String[] arr4 = {"aaa"}; // anonymous array
         // not valid: String[] arr = new String[1]{"aaa"};
@@ -24,9 +27,9 @@ public class ArrayClass {
         System.out.println(Arrays.toString(arr4)); // to print array in one line, will be [aaa]
 
         // Casting to another type:
-        String[] str = { "stringValue" };
-        Object[] obj = str;
-        String[] againStr = (String[]) obj;
+        String[] strArr = { "stringValue" };
+        Object[] objArr = strArr;
+        String[] againStrArr = (String[]) objArr;
 
         // Using length attribute:
         int[] array = {1, 2, 3};

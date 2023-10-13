@@ -1,7 +1,8 @@
 /*
-Overloading of a method occurs when the name of more than one methods in a class is exactly same but the parameter type lists are different.
+Overloading of a method occurs when the name of more than one method in a class is exactly same
+but the parameter type lists are different.
 Different access modifiers are prohibited
-Possible to overload whith primitive && wrapper type, but cannot be array with different types
+Possible to overload with primitive && wrapper type, but cannot has array with different types
 Final methods cannot be overriden or hidden
  */
 public class Overloading {

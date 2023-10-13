@@ -4,6 +4,8 @@ public class ForLoops {
 
         int[] arr = new int[]{1, 2, 3, 4, 5, 6};
 
+        // Main problem: indexing in array starts with 0, but length counts each element starting with 1
+
         // Valid iteration through an array:
 
         // 1
@@ -82,7 +84,7 @@ public class ForLoops {
                     break RABBIT; // transfer control to the enclosing statement
                 count++;
             }
-        System.out.println(count);
+        System.out.println(count); // will iterate twice: count++, RABBIT breaks, count++
     }
 
     static void exampleContinue() {
@@ -90,15 +92,15 @@ public class ForLoops {
         BUNNY: for(int row = 1; row <=3; row++)
             RABBIT: for(int col = 0; col <3 ; col++) {
                 if((col + row) % 2 == 0)
-                    continue BUNNY; // transfer control to the boolean expression if the loop must continue to the nearest inner loop
+                    continue BUNNY; // transfer control to the boolean expression
+                // if the loop must continue to the nearest inner loop
                 count++;
             }
-        System.out.println(count);
+        System.out.println(count); // will iterate twice: count++, continue, count++
     }
 
-
     static void loopTest() {
-        int i=0, j=11;
+        int i = 0, j = 11;
         do {
             if (i > j) { break; }
             j--;

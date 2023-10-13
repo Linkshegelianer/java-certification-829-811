@@ -24,7 +24,6 @@ public class Switch {
             default -> "Invalid value";
         }; // here must be a semicolon!!!!
         System.out.println(result);
-
     }
 
     static void switchStatement(int number) {

@@ -26,11 +26,11 @@ public class TypesOfOperators {
         // Valid declarations:
         int a, b, c;
         a = b = c = 100;
-        int d, e, f=100;
-        int g=100, h, i;
+        int d, e, f = 100;
+        int g = 100, h, i;
 
         // Invalid declarations:
 //        int a = b = c = 100;
-//        int a= 100 = b = c;
+//        int a = 100 = b = c;
     }
 }

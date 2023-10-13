@@ -1,6 +1,6 @@
 package building_blocks_1;
 /*
-Static variable cannot use instance variable
+Static variables cannot use instance variables
 Instance methods can call static, static can call only when creating instance
  */
 
@@ -27,14 +27,15 @@ public class TypesOfVariables {
 
         // Won't compile:
 //    int a, var b = 3; // you replaced var with a real type
-//    var n = null; // cannot be initialized with null, can only be resigned a null value after it's declared as a reference type
+//    var n = null; // cannot be initialized with null, can only be resigned a null value after it's
+//    declared as a reference type
 //    var fall = 2, autumn = 2;
 //    var winter = 12, cold;
     }
 
     public static void main(String[] args) {
         var value1 = Class.MAX_LENGTH; // can use it without creating an instance
-        Class object = new Class(); // class is a reserved word, need instance to access fields
+        Class object = new Class(); // need instance to access fields + class is a reserved word
         var value2 = object.length;
         System.out.println(String.format("Constant variable from Class has value %d, instance variable has value %d.", value1, value2));
         var value3 = 1;
@@ -43,12 +44,12 @@ public class TypesOfVariables {
 
     public void count() {
         String a, b, c; // three references
-        a = new String("hello"); // 2 objects
-        b = a;
-        c = a + b;
+        a = new String("hello");
+        b = a; // b points to the same object
+        c = a + b; // new object by concatenation
     }
 
-    // The reference type is List and the object type is ArrayList.
+    // The reference type is List and the object type is ArrayList:
     List students = new ArrayList();
 
 }

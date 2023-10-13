@@ -9,16 +9,15 @@ public class ConditionalStatements {
         boolean b2 = false;
         if (b2 = b1 == false) { // condition will be boolean
             int x;
-            System.out.println(x = 3); // expression returns an int
+            System.out.println(x = 3); // expression returns an int 3
         }
 
         // while (false) is unreachable -> compile error
-
         do {
             System.out.println("This code is not unreachable since it's in do/while loop");
         } while (false);
 
-//        ternaryOperator(); // 2, Zebra
+        ternaryOperator(); // 2, Zebra
 
         ifTest1(true); // True False
         ifTest1(false); // False False
@@ -62,7 +61,7 @@ public class ConditionalStatements {
         }else if(flag){
             System.out.println("2");
         }else if(!flag){
-            System.out.println("3"); // will print 3
+            System.out.println("3"); // will print 3 in any case
         }else System.out.println("4");
     }
 

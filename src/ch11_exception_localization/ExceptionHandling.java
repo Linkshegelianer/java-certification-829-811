@@ -1,5 +1,5 @@
 /*
-try {
+    try {
         // protected code
     } catch (Exception e) { // can have multiple catch blocks, subclass exception must go before superclass
         // if one catch block cannot be executed, the whole code won't compile
@@ -13,6 +13,7 @@ public class ExceptionHandling {
 
     // no arguments - The end
     // one argument - Exception in Main & The end
+
     public static void main(String args[]) {
         try {
             if (args.length == 0) return;

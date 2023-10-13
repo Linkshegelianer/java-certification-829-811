@@ -1,5 +1,5 @@
 /*
-Two references equal when they point to the same object of null.
+Two references equal when they point to the same object or null.
 == compare references pointing to the same object; if use == on different types, code won't compile
 equals() uses logical equality rather than object equality
  */
@@ -19,9 +19,9 @@ public class Equality {
         int[] balances3 = new int[1];
         balances3[0] = 5;
 
-        System.out.println(balances1 == balances2); // true
-        System.out.println(balances1.equals(balances2)); // true
-        System.out.println(balances1.equals(balances3)); // false
+        System.out.println(balances1 == balances2); // true, point to the same object
+        System.out.println(balances1.equals(balances2)); // true since don't override equals() and works like ==
+        System.out.println(balances1.equals(balances3)); // false since different object
 
         System.out.println("String equality");
         // == checks whether references point to the same String object
@@ -51,15 +51,14 @@ public class Equality {
         var name = "Hello World";
         var name2 = new String("Hello World").intern(); // will use an object in the string pool if one is present
         System.out.println(name == name2); // true
-        System.out.println(name.equals(name)); // true
+        System.out.println(name.equals(name2)); // true
 
         var first = "rat" + 1;
         var second = "r" + "a" + "t" + "1";
         var third = "r" + "a" + "t" + new String("1");
-        System.out.println(first == second); // compile-time constants, share the same string pool reference true
+        System.out.println(first == second); // true, compile-time constants, share the same string pool reference
         System.out.println(first == second.intern()); // true
-        System.out.println(first == third); // String constructor => not compile-time constant false
+        System.out.println(first == third); // false, String constructor => not compile-time constant
         System.out.println(first == third.intern()); // true, point to the same String
-
     }
 }

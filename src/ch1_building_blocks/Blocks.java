@@ -20,24 +20,24 @@ public class Blocks {
     // Valid literals:
 
     int a = 3_1;
-//    int b = 2_234.0_0;
+    double b = 2_234.0_0;
     int c = 9___6;
 
     // Invalid literals:
-//    int d = 1_329_.0;
-//    int e = 3_13.0_;
+//    int d = 1_329_.0; // _ cannot be before and after .
+//    int e = 3_13.0_; // _ cannot be at the end
 //    int f = 5_291._2;
-//    int g = _1_3_5_0;
+//    int g = _1_3_5_0; // _ cannot be at the beginning
 
 
     // Text blocks:
-    // \ - escaping characters \" -> "
-    // \ at the end of the line - omit new line on that line
-    // \n - new line for unix
-    // \r - new line for mac
-    // \s - keep the whitespace (will count for length())
+//     \ - escaping characters \" -> "
+//     \ at the end of the line - omit new line on that line
+//     \n - new line for unix
+//     \r - new line for mac
+//     \s - keep the whitespace (will count for length())
 
-    public static String formatting1 = "\"Java Study Guide\"\n by Scott & Jeanne";
+    public static String formatting1 = "\"Java Study Guide\"\n by Scott & Jeanne"; // escape ", \n add new line
     public static String formatting2 = """
             "Java Study Guide\"
              by Scott & Jeanne

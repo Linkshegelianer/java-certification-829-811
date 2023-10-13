@@ -23,7 +23,7 @@ public class StringBuilderClass {
         var one = new StringBuilder();
         var two = new StringBuilder();
         var three = one.append("a"); // point to the same object
-        System.out.println(one == two); // false
-        System.out.println(one == three); // true
+        System.out.println(one == two); // false, different objects
+        System.out.println(one == three); // true, same object
     }
 }

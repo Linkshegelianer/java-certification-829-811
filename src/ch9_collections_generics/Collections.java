@@ -2,6 +2,7 @@ import java.util.*;
 public class Collections {
 
     public static void main(String[] args) {
+        // The reference type is List and the object type is ArrayList:
         List<Integer> list1 = new ArrayList<Integer>();
         List<String> list2 = new ArrayList<>(); // diamond operator allows omitting the generic type from the right side
 
@@ -40,9 +41,9 @@ public class Collections {
 
         // Creating List with a Factory:
         String[] array = new String[] {"a", "b", "c"};
-        List<String> asList = Arrays.asList(array); // [a, b, c]
-        List<String> of = List.of(array); // [a, b, c] immutable list, exception when adding elements
-        List<String> copy = List.copyOf(asList); // [a, b, c] immutable list, exception when adding elements
+        List<String> asList = Arrays.asList(array); // [a, b, c] immutable list, exception when adding elements
+        List<String> of = List.of(array); // [a, b, c] immutable
+        List<String> copy = List.copyOf(asList); // [a, b, c] immutable
 
         System.out.println(list2.add("0")); // true
         System.out.println(list2.remove("1")); // false, "1" wasn't added
@@ -56,7 +57,7 @@ public class Collections {
         // Set interface:
 
         // Important implementing classes:
-        Set<Integer> hashSet = new HashSet<>(); // hash table, arbitrary order, hashCode() for retrieveing Objects efficiently
+        Set<Integer> hashSet = new HashSet<>(); // hash table, arbitrary order, hashCode() for retrieving Objects efficiently
         Set<Integer> treeSet = new TreeSet<>(); // sorter order, adding/removing is slower than with a HashSet
 
         // Creating immutable set:
@@ -76,6 +77,7 @@ public class Collections {
         System.out.println(queue2.peekFirst()); // 12
         System.out.println(queue2.peekLast()); // 14
         queue2.pollFirst();
+        System.out.println(queue2.peekFirst()); // 14, moved to the first
         queue2.pollLast();
         System.out.println(queue2.peekFirst()); // null
 
@@ -98,6 +100,9 @@ public class Collections {
         // Iterate over a map:
         for (String key: map1.keySet())
             System.out.println(key + ","); // key2, key1
+
+        for (String value : map1.values())
+            System.out.println(value + ",");
 
         map1.forEach((k, v) -> System.out.println(v)); // value2, value1
 

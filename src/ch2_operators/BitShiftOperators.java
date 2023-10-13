@@ -23,5 +23,11 @@ public class BitShiftOperators {
         j = c >>> 2; // from -1000 to 0010, filling the leftmost bits with zeros
         System.out.println("Original value of c: " + c);
         System.out.println("Result of unsigned right shift >>> by 2: " + j);
+
+        byte d = 11;
+        int h;
+        h = d >>> 2; // from 1011 to 0100
+        System.out.println("Original value of d: " + d);
+        System.out.println("Result of unsigned right shift >>> by 2: " + h);
     }
 }

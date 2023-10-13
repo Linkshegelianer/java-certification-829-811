@@ -1,7 +1,7 @@
 /*
 This code illustrates how pass-by-value semantics works in Java.
 
-We can change value of a primitive or a object field, but not the reference.
+We can change value of a primitive or an object field, but not the reference.
 When an object is passed as a parameter, it's actually the value of the reference to the object that is passed.
 Modifying the reference itself inside the method does not affect the original reference in the calling code.
  */

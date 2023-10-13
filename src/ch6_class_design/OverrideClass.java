@@ -1,10 +1,13 @@
 /*
-Rules vor valud override:
-- return type must be covariant == cannot be broader;
+Rules vor valid override:
+- return type must be covariant == cannot be broader; Cannot return void if previously returned something.
 - generic arguments must have the same signature with the same generic type.
 
 Overriden method may nod declare any new or broader checked exception that the method it inherits
  */
+
+import java.util.*;
+
 public class OverrideClass {
 
     private static class Base {
@@ -15,6 +18,13 @@ public class OverrideClass {
 
         public int inc(int value) {
             return ++value;
+        }
+
+        public Number incInt(int value) { return Integer.valueOf(value); } // Number is a superclass for Integer
+
+        public Object returnObj() { // Object is a superclass for every reference type
+            List<Integer> list = new ArrayList<Integer>();
+            return list;
         }
     }
 
@@ -27,7 +37,16 @@ public class OverrideClass {
 
         @Override
         public int inc(int value) {
-            return value++;
+            return ++value;
+        }
+
+        @Override
+        public Integer incInt(int value) { return Integer.valueOf(++value); }
+
+        @Override
+        public List returnObj() {
+            List<String> list = new ArrayList<String>();
+            return list;
         }
     }
 

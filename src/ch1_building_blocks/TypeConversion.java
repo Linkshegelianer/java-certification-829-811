@@ -1,6 +1,6 @@
 package building_blocks_1;
 /*
-Conversion from bigger to smaller data types must be with excplicit casting.
+Conversion from bigger to smaller data types must be with explicit casting.
 Casting a numeric value may change the data type, while casting an object only changes the reference to the object,
 not the object itself.
  */
@@ -36,6 +36,7 @@ public class TypeConversion {
         // If one of the values is integral and the other is floating-point,
         // the integral value will be promoted to the floating-point value’s data type
         double result = 1.0 + 2;
+        System.out.println(result); // will be 3.0
 
 
         // compound assignment operator applies casting automatically, cannot be used to declare a new variable
@@ -45,25 +46,30 @@ public class TypeConversion {
 
         // float data type:
         float f1 = -1;  // int value can be assigned to int, long, float, double
+        System.out.println(f1); // will be -1.0
         float f2 = 0x0123;
+        System.out.println(f2); // will be 291.0
         float f3 = 4;
+        System.out.println(f3); // will be 4.0
         float f4 = -123;
-        // float f1 = 1.0; // 1.0 is a double.
-        // float f = 43e1; // false
-        // float y = 2.1; // won't compile, need f to assign it as a float
-        // float d = 0 * 1.5; //
-        System.out.println(4 + 1.0f); // would print 5.0
+        System.out.println(f4); // will be -123.0
 
-        // valid conversion:
+        // Incorrect floats:
+//         float f1 = 1.0; // 1.0 is a double.
+//         float f = 43e1; // false
+//         float y = 2.1; // won't compile, need f to assign it as a float
+//         float d = 0 * 1.5;
+
+        // Valid conversion:
         int fur = (int)5;
-        int hair = (short) 2; // int can hold short since it's smaller
+        int hair = (short) 2; // int can hold short since it's smaller, but explicit casting is not required
         String type = (String) "Bird";
         short tail = (short)(4 + 10);
 
         // invalid conversion:
-//        float egg = 2.0 / 9; // 2.0 is double
-//        int tadpole = (int)5 * 2L; // the result will be long
-//        short frog = 3 - 2.0; // will be double
+//        float egg = 2.0 / 9; // 2.0 is double, requires explicit casting
+//        int tadpole = (int)5 * 2L; // the result will be long, requires explicit casting
+//        short frog = 3 - 2.0; // will be double, requires explicit casting
 //        int fish = 1.0; // assign a double 1.0 to an integer value => int fish = (int)1.0;
 //        short bird = 1921222; // outside the range of short
 //        int mammal = 9f; // float, not int

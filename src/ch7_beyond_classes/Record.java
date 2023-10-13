@@ -21,7 +21,7 @@ public record Record(int value, String name) {
 
     // Compact constructor:
     public Record { // no parens or constructor parameters
-        if (value < 0) throw new IllegalArgumentException(); // custom valudation
+        if (value < 0) throw new IllegalArgumentException(); // custom validation
 
         name = name.toUpperCase();
     } // long constructors are called at the end of compact constructor
