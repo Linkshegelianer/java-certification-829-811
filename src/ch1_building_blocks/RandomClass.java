@@ -2,6 +2,7 @@
 Math.random() uses Random.nextDouble(), but Random class allows getting not only double, but also int, long, float,
 double, boolean.
  */
+package building_blocks_1;
 
 import java.util.Random;
 

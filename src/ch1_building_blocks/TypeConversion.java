@@ -1,8 +1,10 @@
+package building_blocks_1;
 /*
 Conversion from bigger to smaller data types must be with excplicit casting.
 Casting a numeric value may change the data type, while casting an object only changes the reference to the object,
 not the object itself.
  */
+
 public class TypeConversion {
 
     public static void main(String[] args) {

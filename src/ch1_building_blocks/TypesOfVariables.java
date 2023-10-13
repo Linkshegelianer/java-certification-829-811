@@ -1,3 +1,4 @@
+package building_blocks_1;
 /*
 Static variable cannot use instance variable
 Instance methods can call static, static can call only when creating instance

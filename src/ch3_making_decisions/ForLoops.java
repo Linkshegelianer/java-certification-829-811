@@ -71,6 +71,7 @@ public class ForLoops {
         exampleBreak(); // 2
         exampleContinue(); // 2
         loopTest(); // 5  6
+        printZero(); // will print 0 five times
     }
 
     static void exampleBreak() {
@@ -103,5 +104,13 @@ public class ForLoops {
             j--;
         } while (++i < 5); // comparison will happen AFTER increment i because it is ++i and not i++
         System.out.println(i+"  "+j); // will print 5 6
+    }
+
+    static void printZero() {
+        int array[] = {5, 4, 3, 2, 1};
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] - (array.length - i));
+        }
     }
 }
