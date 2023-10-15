@@ -9,15 +9,15 @@ Updating the value of the foreach loop variable bal does not change the values i
  */
 public class PassByValueArr {
 
-    public void updateVal(int[] balances) {
-        balances[0] = 100;
-        balances[1] = 200;
-    }
-
     public void updateRef(int[] balances) {
         for (int bal : balances) {
             bal = 100;
         }
+    }
+
+    public void updateVal(int[] balances) {
+        balances[0] = 100;
+        balances[1] = 200;
     }
 
     public static void main(String[] args) {
@@ -28,12 +28,12 @@ public class PassByValueArr {
         PassByValueArr p = new PassByValueArr();
         p.updateRef(balances);
         for (int bal : balances) {
-            System.out.print(bal+" \n"); // will be 10 20
+            System.out.print(bal + "\n"); // will be 10 20
         }
 
         p.updateVal(balances);
         for (int bal : balances) {
-            System.out.print(bal+" \n"); // will be 100 200
+            System.out.print(bal + "\n"); // will be 100 200
         }
     }
 }

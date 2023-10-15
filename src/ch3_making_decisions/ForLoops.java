@@ -74,6 +74,13 @@ public class ForLoops {
         exampleContinue(); // 2
         loopTest(); // 5  6
         printZero(); // will print 0 five times
+        loopInc(); // will print 0 0 and 1 1
+
+        // Dandling else problem:
+        String[] closed = {"closed"};
+        String[] openSomeone = {"open", "someone"};
+        dandlingElse(closed); // won't do anything
+        dandlingElse(openSomeone); // will print "Hello!"
     }
 
     static void exampleBreak() {
@@ -114,5 +121,22 @@ public class ForLoops {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] - (array.length - i));
         }
+    }
+
+    static void loopInc() {
+        int i;
+        int j;
+
+        for (i = 0, j = 0 ; j < 1 ; ++j , i++) { // only one iteration
+            System.out.println(i + " " + j);
+        }
+        System.out.println(i + " " + j);
+    }
+
+    static void dandlingElse(String[] args) {
+        if (args[0].equals("open"))
+            if (args[1].equals("someone"))
+                System.out.println("Hello!");
+            else System.out.println("Go away "+ args[1]); // the else clause is only for inner statement
     }
 }

@@ -38,4 +38,9 @@ public class Constructor {
         System.out.println(c2.toString()); // [1]
         System.out.println(c3.toString()); // [1, 2, 3]
     }
+
+    // All three options will compile:
+    private int Constructor;  // we can use the same name for class, variable, or method
+    public Constructor(int Constructor){ this.Constructor = Constructor; } // the same name is used, which is not an issue
+    public void FooBar(){ } // has return type => method, not a constructor
 }

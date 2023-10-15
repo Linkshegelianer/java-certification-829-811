@@ -74,5 +74,13 @@ public class TypeConversion {
 //        short bird = 1921222; // outside the range of short
 //        int mammal = 9f; // float, not int
 //        long reptile = 192_301_398_193_810_323; // doesn’t have L to be treated as long
+
+        int i = 5;
+        float f = 5.5f;
+        double d = 3.8;
+        char c = 'a';
+        if (i == f) c++;
+        if (((int) (f + d)) == ((int) f + (int) d)) c += 2;
+        System.out.println(c); // will print a, since the condition will be false
     }
 }

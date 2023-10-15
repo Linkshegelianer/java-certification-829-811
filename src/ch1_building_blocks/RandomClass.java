@@ -45,7 +45,10 @@ public class RandomClass {
         System.out.println(1 + Math.random() * 9);
         System.out.println(1 + Math.round(Math.random()*9)); // will be rounded
 
-        // Invalid convertion from float to double (must be explicit):
+        // double v = Math.random() * 10; // will return a double between 0.0 to less than 10.0
+        // Math.round(Math.random()*9); //  will return a double between 0.0 to less than 9.0
+
+        // Invalid conversion from float to double (must be explicit):
         // float three = Math.random();
     }
 }

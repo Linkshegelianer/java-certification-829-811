@@ -1,3 +1,11 @@
+/*
+Benefits of an array over an ArrayList:
+- Consumes less memory
+- Accessing an element in an array is faster than in ArrayList
+
+Both array and ArrayList are not thread safe;
+
+ */
 import java.util.*;
 public class Collections {
 

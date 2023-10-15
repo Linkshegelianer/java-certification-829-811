@@ -7,12 +7,23 @@ Final methods cannot be overriden or hidden
  */
 public class Overloading {
 
-    // correct overload
+    // Correct overloading:
+
+    static void perform_work(int time){ }
+    static int perform_work(int time, int speed){ return time*speed ;}
+
+    void Perform_work(int time){ } // method has different name, which is not overloading!!
+
+
     public static void main(String[] args) {
         perform_work(2);
         System.out.println(perform_work(2, 4));
     }
 
-    static void perform_work(int time){ }
-    static int perform_work(int time, int speed){ return time*speed ;}
+    // Incorrect overloading:
+//    void perform_work(int time){ }
+//    int  perform_work(int speed){return speed ;}
+
+
+
 }
