@@ -4,7 +4,7 @@ You specify the size when creating it
 Counting begins at 0
 last element: arr.length - 1
 length, not length()
-Methods that are passed varargs (...) can be used as if a normal array was passed in
+Methods that are passed varargs (...) can be used as if a normal array was passed in;
 In a multidimensional array, the second-level arrays and beyond can be different sizes
  */
 import java.util.Arrays;
@@ -57,6 +57,37 @@ public class ArrayClass {
         int arrLength = arr.length;
         ArrayClass mv = new ArrayClass();
         mv.printElements(arr, arrLength);
+
+        // Two-dimensional arrays:
+        int[][] vars1; // 2D array
+        int vars2 [][]; // 2D array
+        int[] vars3[]; // 2D array
+        int[] vars4 [], space [][]; // a 2D AND a 3D array
+
+        String [][] rectangle = new String[3][2]; // has three elements, each has two elements
+        int[][] differentSizes = {{1, 4}, {3}, {9,8,7}}; // asymmetric multidimensional array
+
+        // Initialize subarrays separately:
+        int [][] asymmetricArr = new int[4][];
+        asymmetricArr[0] = new int[5];
+        asymmetricArr[1] = new int[3];
+
+        // Looping through multidimensional array:
+        var twoD = new int[3][2];
+        for (int i = 0; i < twoD.length; i++) {
+            for(int j = 0; j < twoD[i].length; j++) {
+                System.out.print(twoD[i][j] + " "); // print element
+            }
+            System.out.println(); // time for a new row
+        }
+
+        // via enhanced for-loop:
+        for(int[] inner : twoD) {
+            for(int num : inner) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
     }
 
     public void printElements(int arr[], int arrLength) { // will print each element recursively
